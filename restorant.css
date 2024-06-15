@@ -1,0 +1,367 @@
+#nav {
+  background-color: black;
+  height: 2cm;
+  opacity: 0.7;
+  z-index: -1;
+}
+
+#nav a {
+  display: flex;
+  float: left;
+  padding-left: 40px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  text-decoration: none;
+  padding-top: 25px;
+}
+
+#home {
+  background-image: url('home1.png');
+  width: 100%;
+  height: 15cm;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#home .transbox {
+  width: 50%;
+  height: 8cm;
+  position: absolute;
+  top: 255px;
+  margin-left: 374px;
+}
+
+#home .transbox h2 {
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+  font-style: oblique;
+}
+
+#home .transbox p {
+  display: flex;
+  text-align: center;
+  font-size: 1rem;
+  font-style: oblique;
+  color: white;
+}
+
+/* box  container */
+
+.box-containter {
+  display: flex;
+  width: 88%;
+  margin-left: 98px;
+  height: auto;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.container {
+  position: relative;
+  width: 300px;
+}
+
+.image {
+  display: block;
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(0, 0, 0, 0.5);
+  overflow: hidden;
+  opacity: 0.7;
+  width: 100%;
+  height: 94%;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  margin: 10px;
+}
+
+.container:hover .overlay {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.text a {
+  color: white;
+  font-size: 72px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-decoration: none;
+}
+
+#menu h2 {
+  display: flex;
+  font-size: 58px;
+  align-items: center;
+  justify-content: center;
+  font-family: cursive;
+}
+
+#about .about-us {
+  background-image: url(aboutbg.png);
+  width: 94%;
+  height: 400px;
+  background-repeat: no-repeat;
+  color: white;
+  background-size: cover;
+  font-size: 20px;
+  margin-left: 56px;
+}
+
+.disc {
+  background-color: rgb(0, 0, 0, 0.5);
+  height: 400px;
+}
+
+.disc h2 {
+  font-size: 49px;
+  font-family: cursive;
+  text-align: center;
+  padding-top: 63px;
+}
+
+.disc p {
+  width: 527px;
+  display: flex;
+  margin-top: 0px;
+  margin-left: 440px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-family: cursive;
+}
+
+
+/* contact us */
+
+#contactus {
+  background-color: white;
+}
+
+#contactus .bg-img {
+  background-image: url("contactus.png");
+  width: 94%;
+  height: 475px;
+  background-position-y: -123px;
+  background-repeat: no-repeat;
+  color: white;
+  background-size: cover;
+  font-size: 20px;
+  margin-left: 56px;
+  margin-top: 58px;
+}
+
+#contactus .container {
+  position: absolute;
+  color: white;
+  margin: 12px;
+  right: 456px;
+  width: 500px;
+  padding: 10px;
+}
+
+#contactus input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  border: none;
+  background: linear-gradient(45deg, white, transparent);
+}
+
+#contactus textarea {
+  margin-top: 20px;
+  width: 100%;
+  background: linear-gradient(45deg, white, transparent);
+}
+
+#contactus .btn {
+  background-color: #eadb97;
+  color: black;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  margin-top: 15px;
+}
+
+#contactus .btn:hover {
+  opacity: 1;
+}
+
+#contactus label {
+  top: 12px;
+}
+
+
+/* footer section */
+
+.footer-distributed {
+  background: #666;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 94%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 26px 50px;
+  margin-left: 56px;
+  margin-top: 45px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+  width: 40%;
+}
+
+/* .footer-distributed .footer-left a{
+  text-decoration: none;
+  border: 2px solid black;
+  
+} */
+/* The company logo */
+
+.footer-distributed h3 {
+  color: #ffffff;
+  font: normal 36px 'Open Sans', cursive;
+  margin: 0;
+}
+
+.footer-distributed h3 span {
+  color: lightseagreen;
+}
+
+.footer-distributed .footer-company-name {
+  color: #222;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+  width: 35%;
+}
+
+.footer-distributed .footer-center i {
+  background-color: #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+  display: inline-block;
+  color: #ffffff;
+  font-weight: 400;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+  color: lightseagreen;
+  text-decoration: none;
+  ;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight: 300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+  width: 20%;
+}
+
+.footer-distributed .footer-company-about {
+  line-height: 20px;
+  color: #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+  display: block;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+  margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
